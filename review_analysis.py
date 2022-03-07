@@ -83,9 +83,10 @@ def main():
     dataframe = upload_df()
     #if "dataframe" in locals():
     if dataframe is not None:
-        dataframe = apply_model(dataframe)
-        dataframe['predicted_semantics'] = dataframe['review_score'].map(lambda text: get_label(text))
-        rslt_df, total_senti_mismatch, pos_senti_mismatch = check_sentiment(dataframe)
+        with st.spinner('applying model to dataset..'):
+            dataframe = apply_model(dataframe)
+            dataframe['predicted_semantics'] = dataframe['review_score'].map(lambda text: get_label(text))
+            rslt_df, total_senti_mismatch, pos_senti_mismatch = check_sentiment(dataframe)
         st.write("# Required dataframe to notify users.")
         st.dataframe(rslt_df)  
         csv = convert_df(rslt_df)   
