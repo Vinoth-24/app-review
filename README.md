@@ -5,4 +5,5 @@
 - We match the predicted and the user semantics, then display a final dataframe for the employees to notify the users regarding this.
 - We also have the count of total semantic mismatch and total positive semantic mismatch in review ratings.
 - The app is deplyoyed using Streamlit library
+- You have the option of downloading the dataframe as a csv file once the training is complete.
 ### Have a good day!
