@@ -6,4 +6,6 @@
 - We also have the count of total semantic mismatch and total positive semantic mismatch in review ratings.
 - The app is deplyoyed using Streamlit library
 - You have the option of downloading the dataframe as a csv file once the training is complete.
+- The deployment of the app is done through AWS EC2 Console. I have learned the process of deploying in AWS just to show my learning capability. I hope it is appreciated.
+- The deployed link is : https://innerpeas.in/
 ### Have a good day!
